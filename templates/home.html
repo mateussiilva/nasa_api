@@ -1,7 +1,21 @@
-{% extends  'head.html' %}
+{% extends 'head.html' %}
 {% block corpo %}
+
 <body>
-    <h1>Pagina Inicial</h1>
-    
+    <main>
+        <section>
+            <h1>{{dados_imagem.get("titulo")}}</h1>
+            <figure>
+                <!-- {{dados_imagem.get('image')}} -->
+            </figure>
+            <p>
+                {{dados_imagem.get('texto')}}
+            </p>
+            <article>
+                {{dados_imagem.get('autor')}}
+            </article>
+        </section>
+    </main>
+
 </body>
 {% endblock%}
